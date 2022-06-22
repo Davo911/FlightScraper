@@ -1,0 +1,245 @@
+{
+  "id": "2e06dd31-a5d5-41b7-957c-270b0bf9f940",
+  "version": "2.0",
+  "name": "Skyscanner",
+  "url": "https://www.skyscanner.de",
+  "tests": [{
+    "id": "03bf73f6-5828-4cc4-85af-20f1d632eb54",
+    "name": "1 Search",
+    "commands": [{
+      "id": "b70af69f-fa72-420c-b5fe-5b7bc43647b7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e17c33db-e49a-4ff3-aefa-6e58f9b063d6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "224749c1-54c8-4394-9646-eb2f1cd270e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=acceptCookieButton",
+      "targets": [
+        ["id=acceptCookieButton", "id"],
+        ["css=#acceptCookieButton", "css:finder"],
+        ["xpath=//button[@id='acceptCookieButton']", "xpath:attributes"],
+        ["xpath=//div[@id='cookieBannerContent']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ccbdf23-6ec2-479c-b658-c9d8a53512de",
+      "comment": "",
+      "command": "click",
+      "target": "id=fsc-origin-search",
+      "targets": [
+        ["id=fsc-origin-search", "id"],
+        ["name=fsc-origin-search", "name"],
+        ["css=#fsc-origin-search", "css:finder"],
+        ["xpath=//input[@id='fsc-origin-search']", "xpath:attributes"],
+        ["xpath=//div[@id='flights-search-controls-root']/div/div/form/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0efc2c46-070e-4470-af6a-b46843f9f5f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=fsc-origin-search",
+      "targets": [
+        ["id=fsc-origin-search", "id"],
+        ["name=fsc-origin-search", "name"],
+        ["css=#fsc-origin-search", "css:finder"],
+        ["xpath=//input[@id='fsc-origin-search']", "xpath:attributes"],
+        ["xpath=//div[@id='flights-search-controls-root']/div/div/form/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Berlin"
+    }, {
+      "id": "fcef30c4-deb6-4339-88f1-a412f595ae29",
+      "comment": "",
+      "command": "click",
+      "target": "id=fsc-destination-search",
+      "targets": [
+        ["id=fsc-destination-search", "id"],
+        ["name=fsc-destination-search", "name"],
+        ["css=#fsc-destination-search", "css:finder"],
+        ["xpath=//input[@id='fsc-destination-search']", "xpath:attributes"],
+        ["xpath=//div[@id='flights-search-controls-root']/div/div/form/div[2]/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ce76fb0-0e22-41a4-9b66-e09da79b9b07",
+      "comment": "",
+      "command": "type",
+      "target": "id=fsc-destination-search",
+      "targets": [
+        ["id=fsc-destination-search", "id"],
+        ["name=fsc-destination-search", "name"],
+        ["css=#fsc-destination-search", "css:finder"],
+        ["xpath=//input[@id='fsc-destination-search']", "xpath:attributes"],
+        ["xpath=//div[@id='flights-search-controls-root']/div/div/form/div[2]/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "Faro"
+    }, {
+      "id": "3396fbbe-3458-4200-89e4-3c97dfbbdac4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#depart-fsc-datepicker-button > .DateInput_DateInput--text__MzMyY",
+      "targets": [
+        ["css=#depart-fsc-datepicker-button > .DateInput_DateInput--text__MzMyY", "css:finder"],
+        ["xpath=//button[@id='depart-fsc-datepicker-button']/span", "xpath:idRelative"],
+        ["xpath=//div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'15.06.22')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b81181ba-d659-44da-b6aa-18ce018ec39d",
+      "comment": "",
+      "command": "click",
+      "target": "id=depart-calendar__bpk_calendar_nav_select",
+      "targets": [
+        ["id=depart-calendar__bpk_calendar_nav_select", "id"],
+        ["name=months", "name"],
+        ["css=#depart-calendar__bpk_calendar_nav_select", "css:finder"],
+        ["xpath=//select[@id='depart-calendar__bpk_calendar_nav_select']", "xpath:attributes"],
+        ["xpath=//section[@id='depart-fsc-datepicker-popover']/div/div/div[2]/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d2b1781-23bc-4d86-a787-cfdcbbb1beb1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#depart-calendar__bpk_calendar_nav_select > option:nth-child(2)",
+      "targets": [
+        ["css=#depart-calendar__bpk_calendar_nav_select > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='2022-07']", "xpath:attributes"],
+        ["xpath=//select[@id='depart-calendar__bpk_calendar_nav_select']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Juli 2022')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc87bdf4-8bf0-426d-b554-ca1512a79987",
+      "comment": "",
+      "command": "click",
+      "target": "css=.BpkCalendarGrid_bpk-calendar-grid__week__MWNiZ:nth-child(2) > .BpkCalendarGrid_bpk-calendar-grid__date__MDJiY:nth-child(1) > .BpkCalendarDate_bpk-calendar-date__MTdlO",
+      "targets": [
+        ["css=.BpkCalendarGrid_bpk-calendar-grid__week__MWNiZ:nth-child(2) > .BpkCalendarGrid_bpk-calendar-grid__date__MDJiY:nth-child(1) > .BpkCalendarDate_bpk-calendar-date__MTdlO", "css:finder"],
+        ["xpath=(//button[@type='button'])[26]", "xpath:attributes"],
+        ["xpath=//section[@id='depart-fsc-datepicker-popover']/div/div/div[2]/div/table/tbody/tr[2]/td/button", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/button", "xpath:position"],
+        ["xpath=//button[contains(.,'4')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27bca285-1bc9-4b13-90b9-111bd886c09a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#return-fsc-datepicker-button > .DateInput_DateInput--text__MzMyY",
+      "targets": [
+        ["css=#return-fsc-datepicker-button > .DateInput_DateInput--text__MzMyY", "css:finder"],
+        ["xpath=//button[@id='return-fsc-datepicker-button']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e48f44fe-0a9d-4590-aba7-7c993f4051f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=return-calendar__bpk_calendar_nav_select",
+      "targets": [
+        ["id=return-calendar__bpk_calendar_nav_select", "id"],
+        ["name=months", "name"],
+        ["css=#return-calendar__bpk_calendar_nav_select", "css:finder"],
+        ["xpath=//select[@id='return-calendar__bpk_calendar_nav_select']", "xpath:attributes"],
+        ["xpath=//section[@id='return-fsc-datepicker-popover']/div/div/div[2]/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc41155c-e4a5-4c5a-959e-f2bbe6b355c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#return-calendar__bpk_calendar_nav_select > option:nth-child(2)",
+      "targets": [
+        ["css=#return-calendar__bpk_calendar_nav_select > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='2022-07']", "xpath:attributes"],
+        ["xpath=//select[@id='return-calendar__bpk_calendar_nav_select']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Juli 2022')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27730c54-14b7-4451-ab70-8186748f5a2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.BpkCalendarGrid_bpk-calendar-grid__week__MWNiZ:nth-child(2) > .BpkCalendarGrid_bpk-calendar-grid__date__MDJiY:nth-child(7) > .BpkCalendarDate_bpk-calendar-date__MTdlO",
+      "targets": [
+        ["css=.BpkCalendarGrid_bpk-calendar-grid__week__MWNiZ:nth-child(2) > .BpkCalendarGrid_bpk-calendar-grid__date__MDJiY:nth-child(7) > .BpkCalendarDate_bpk-calendar-date__MTdlO", "css:finder"],
+        ["xpath=(//button[@type='button'])[32]", "xpath:attributes"],
+        ["xpath=//section[@id='return-fsc-datepicker-popover']/div/div/div[2]/div/table/tbody/tr[2]/td[7]/button", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'10')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "257a34d2-c8cd-41d7-a69b-019370237025",
+      "comment": "",
+      "command": "click",
+      "target": "name=originFlexible",
+      "targets": [
+        ["name=originFlexible", "name"],
+        ["css=.SingleDestControls_origin-wrapper__YzBkN .BpkCheckbox_bpk-checkbox__input__ZWQ5N", "css:finder"],
+        ["xpath=//input[@name='originFlexible']", "xpath:attributes"],
+        ["xpath=//div[@id='flights-search-controls-root']/div/div/form/div[2]/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71f54d05-5034-4b16-af1d-1a2642f90fe9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SingleDestControls_destination-wrapper__NDQyN > .BpkCheckbox_bpk-checkbox__OTI4N",
+      "targets": [
+        ["css=.SingleDestControls_destination-wrapper__NDQyN > .BpkCheckbox_bpk-checkbox__OTI4N", "css:finder"],
+        ["xpath=//div[@id='flights-search-controls-root']/div/div/form/div[2]/div/div[3]/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39afd6fd-c188-4d40-b768-e927dba475ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.BpkButtonBase_bpk-button__NTM4Y",
+      "targets": [
+        ["css=.BpkButtonBase_bpk-button__NTM4Y", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='flights-search-controls-root']/div/div/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Suchen ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "73136da4-0ac7-48d7-a41d-73e91aa30bde",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["03bf73f6-5828-4cc4-85af-20f1d632eb54"]
+  }],
+  "urls": ["https://www.skyscanner.de/"],
+  "plugins": []
+}
